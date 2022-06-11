@@ -27,7 +27,7 @@ const Navbar = () => {
         }
     },[screenSize])
     const handleMenu = () => {
-        if(screenSize< 768){
+        if(screenSize < 768){
             setActiveMenu(false);
         } else {
             return false;
@@ -37,7 +37,7 @@ const Navbar = () => {
     <div className="nav-container">
         <div className="logo-container">
             <Avatar src={icon} size="large"/>
-            < Typography.Title level={2} className="logo">
+            <Typography.Title level={2} className="logo">
                 <Link to="/">Cryptoverse</Link>
             </Typography.Title>
             <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}>
